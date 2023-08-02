@@ -31,4 +31,12 @@ class FrontendController extends Controller
         return view('frontend.payment');
     }
 
+    public function userLogin(){
+        return view('frontend.login');
+    }
+
+    public function userRegister(){
+        return view('frontend.register');
+    }
+
 }

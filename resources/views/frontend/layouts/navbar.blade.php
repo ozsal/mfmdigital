@@ -7,9 +7,9 @@
                            <div class="wpr-logo elementor-clearfix">
                               <picture class="wpr-logo-image">
                                  <img src="https://mfmdigitalnepal.com/wp-content/uploads/2023/05/cropped-Digital-Nepal-3-1.png" alt="">
-                                 <a class="wpr-logo-url" rel="home" href="https://mfmdigitalnepal.com/"></a>
+                                 <a class="wpr-logo-url" rel="home" href="{{route('home')}}"></a>
                               </picture>
-                              <a class="wpr-logo-url" rel="home" href="https://mfmdigitalnepal.com/"></a>
+                              <a class="wpr-logo-url" rel="home" href="{{route('home')}}"></a>
                            </div>
                         </div>
                      </div>
@@ -27,7 +27,7 @@
                                  <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32 {{(request()->segment(1) == 'catalog') ? 'current-menu-item' : '' }} "><a href="{{route('catalog')}}" class="{{(request()->segment(1) == 'catalog') ? 'eael-item-active' : '' }}">Catalog</a></li>
                                  <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31 {{(request()->segment(1) == 'about') ? 'current-menu-item' : '' }} "><a href="{{route('about')}}" class="{{(request()->segment(1) == 'about') ? 'eael-item-active' : '' }}">About</a></li>
                                  <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30 {{(request()->segment(1) == 'contact') ? 'current-menu-item' : '' }} "><a href="{{route('contact')}}" class="{{(request()->segment(1) == 'contact') ? 'eael-item-active' : '' }}">Contact</a></li>
-                                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="https://mfmdigitalnepal.com/login/">Login</a></li>
+                                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17 {{(request()->segment(1) == 'user-login') ? 'current-menu-item' : '' }} "><a href="{{route('front-login')}}" class="{{(request()->segment(1) == 'user-login') ? 'eael-item-active' : '' }} ">Login</a></li>
                               </ul>
                               <button class="eael-simple-menu-toggle"><i aria-hidden="true" class="fas fa-bars"></i><span class="eael-simple-menu-toggle-text"></span></button>
                            </div>

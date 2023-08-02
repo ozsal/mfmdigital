@@ -49,18 +49,6 @@
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
       <script data-cfasync="false" src="{{ asset('frontend/assets/js/jquery.min.js')}}" id="jquery-core-js"></script>
       <script data-cfasync="false" src="{{ asset('frontend/assets/js/jquery-migrate.min.js')}}" id="jquery-migrate-js"></script>
-      <!-- <link rel="https://api.w.org/" href="https://mfmdigitalnepal.com/wp-json/"><link rel="alternate" type="application/json" href="https://mfmdigitalnepal.com/wp-json/wp/v2/pages/18"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mfmdigitalnepal.com/xmlrpc.php?rsd"> -->
-      <!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mfmdigitalnepal.com/wp-includes/wlwmanifest.xml"> -->
-      <!-- <meta name="generator" content="WordPress 6.2.2"> -->
-      <!-- <link rel="canonical" href="https://mfmdigitalnepal.com/">
-         <link rel="shortlink" href="https://mfmdigitalnepal.com/">
-         <link rel="alternate" type="application/json+oembed" href="https://mfmdigitalnepal.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmfmdigitalnepal.com%2F">
-         <link rel="alternate" type="text/xml+oembed" href="https://mfmdigitalnepal.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmfmdigitalnepal.com%2F&amp;format=xml">
-         <style type="text/css"> .ae_data .elementor-editor-element-setting {
-                     display:none !important;
-                     }
-                     </style> -->
-      <!-- <meta name="generator" content="Elementor 3.14.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"> -->
       <link rel="icon" href="https://mfmdigitalnepal.com/wp-content/uploads/2023/05/cropped-Digital-Nepal-3-32x32.png" sizes="32x32">
       <link rel="icon" href="https://mfmdigitalnepal.com/wp-content/uploads/2023/05/cropped-Digital-Nepal-3-192x192.png" sizes="192x192">
       <link rel="apple-touch-icon" href="https://mfmdigitalnepal.com/wp-content/uploads/2023/05/cropped-Digital-Nepal-3-180x180.png">
@@ -129,5 +117,7 @@
          opacity: 1;
          }
       </style>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="csrf-token" content="{{ csrf_token() }}">
+      @stack('styles')
    </head>

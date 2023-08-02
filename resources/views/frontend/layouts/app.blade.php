@@ -62,6 +62,6 @@
       <script src="{{ asset('frontend/assets/js/front-end.min.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
       
       <script data-cfasync="false" src="{{asset('frontend/assets/js/front-end-2.min.js')}}" id="wpr-addons-js-js"></script>
-     
+     @stack('scripts')
    </body>
 </html>

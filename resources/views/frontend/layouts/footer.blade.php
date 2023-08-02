@@ -12,13 +12,12 @@
                            <div data-hamburger-icon="<i aria-hidden=&quot;true&quot; class=&quot;fas fa-bars&quot;></i>" data-indicator-class="fas fa-angle-down" data-dropdown-indicator-class="fas fa-angle-down" class="eael-simple-menu-container eael-simple-menu-align-center eael-simple-menu--stretch eael-simple-menu-dropdown-align-left preset-2" data-hamburger-breakpoints="{&quot;mobile&quot;:&quot;Mobile Portrait (> 767px)&quot;,&quot;tablet&quot;:&quot;Tablet Portrait (> 1024px)&quot;,&quot;desktop&quot;:&quot;Desktop (> 2400px)&quot;,&quot;none&quot;:&quot;None&quot;}" data-hamburger-device="none">
                               <span class="eael-simple-menu-toggle-text"></span>
                               <ul id="menu-main-menu-1" class="eael-simple-menu eael-simple-menu-dropdown-animate-to-top eael-simple-menu-indicator eael-simple-menu-vertical">
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-18 current_page_item menu-item-34"><a href="https://mfmdigitalnepal.com/" aria-current="page" class="eael-item-active">Home</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://mfmdigitalnepal.com/blueprint/">Blueprint</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://mfmdigitalnepal.com/catalogue/">Catalog</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://mfmdigitalnepal.com/about/">About</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://mfmdigitalnepal.com/contact/">Contact</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="https://mfmdigitalnepal.com/login/">Login</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="https://mfmdigitalnepal.com/logout/">Logout</a></li>
+                              <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-18 current_page_item menu-item-34 {{(request()->segment(1) == 'home') ? 'current-menu-item' : '' }} "><a href="{{route('home')}}" aria-current="page" class="{{(request()->segment(1) == 'home') ? 'eael-item-active' : '' }}">Home</a></li>
+                                 <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33 {{(request()->segment(1) == 'blueprint') ? 'current-menu-item' : '' }} "><a href="{{route('blueprint')}}" class="{{(request()->segment(1) == 'blueprint') ? 'eael-item-active' : '' }}">Blueprint</a></li>
+                                 <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32 {{(request()->segment(1) == 'catalog') ? 'current-menu-item' : '' }} "><a href="{{route('catalog')}}" class="{{(request()->segment(1) == 'catalog') ? 'eael-item-active' : '' }}">Catalog</a></li>
+                                 <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31 {{(request()->segment(1) == 'about') ? 'current-menu-item' : '' }} "><a href="{{route('about')}}" class="{{(request()->segment(1) == 'about') ? 'eael-item-active' : '' }}">About</a></li>
+                                 <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30 {{(request()->segment(1) == 'contact') ? 'current-menu-item' : '' }} "><a href="{{route('contact')}}" class="{{(request()->segment(1) == 'contact') ? 'eael-item-active' : '' }}">Contact</a></li>
+                                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17 {{(request()->segment(1) == 'user-login') ? 'current-menu-item' : '' }} "><a href="{{route('front-login')}}" class="{{(request()->segment(1) == 'user-login') ? 'eael-item-active' : '' }} ">Login</a></li>
                               </ul>
                               <button class="eael-simple-menu-toggle"><i aria-hidden="true" class="fas fa-bars"></i><span class="eael-simple-menu-toggle-text"></span></button>
                            </div>
@@ -33,7 +32,7 @@
                            <h3 class="elementor-heading-title elementor-size-default">Newsletter</h3>
                         </div>
                      </div>
-                     <div class="elementor-element elementor-element-31e6151 eael-ninja-form-button-custom elementor-widget elementor-widget-eael-ninja" data-id="31e6151" data-element_type="widget" data-widget_type="eael-ninja.default">
+                     <div class="elementor-element elementor-element-newsletter eael-ninja-form-button-custom elementor-widget elementor-widget-eael-ninja" data-id="31e6151" data-element_type="widget" data-widget_type="eael-ninja.default">
                         <div class="elementor-widget-container">
                            <div class="eael-contact-form eael-ninja-form placeholder-hide eael-contact-form-align-default" id="eael-ninja-form-18">
                               <div id="nf-form-2-cont" class="nf-form-cont" aria-live="polite" aria-labelledby="nf-form-title-2" aria-describedby="nf-form-errors-2" role="form">
@@ -51,62 +50,63 @@
                                           <div>
                                              <div class="nf-before-form-content">
                                                 <nf-section>
-                                                   <div class="nf-form-fields-required">Fields marked with an <span class="ninja-forms-req-symbol">*</span> are required</div>
+                                                   <div class="nf-form-fields-required newsletter-warning">Fields marked with an <span class="ninja-forms-req-symbol">*</span> are required</div>
                                                 </nf-section>
                                              </div>
                                              <div class="nf-form-content ">
-                                                <nf-fields-wrap>
-                                                   <nf-field>
-                                                      <div id="nf-field-5-container" class="nf-field-container textbox-container  label-above ">
-                                                         <div class="nf-before-field">
-                                                            <nf-section>
-                                                            </nf-section>
-                                                         </div>
-                                                         <div class="nf-field">
-                                                            <div id="nf-field-5-wrap" class="field-wrap textbox-wrap" data-field-id="5">
-                                                               <div class="nf-field-label">
-                                                                  <label for="nf-field-5" id="nf-label-field-5" class="">
-                                                                  Email Address <span class="ninja-forms-req-symbol">*</span> 
-                                                                  </label>
-                                                               </div>
-                                                               <div class="nf-field-element">
-                                                                  <input type="text" value="" class="ninja-forms-field nf-element" placeholder="Enter an valid email address." id="nf-field-5" name="nf-field-5" aria-invalid="false" aria-describedby="nf-error-5" aria-labelledby="nf-label-field-5" aria-required="true" required="">
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="nf-after-field">
-                                                            <nf-section>
-                                                               <div class="nf-input-limit"></div>
-                                                               <div id="nf-error-5" class="nf-error-wrap nf-error" role="alert"></div>
-                                                            </nf-section>
-                                                         </div>
+                                       <nf-fields-wrap>
+                                          <nf-field>
+                                             <div id="nf-field-2-container" class="nf-field-container email-container  label-above ">
+                                                <div class="nf-before-field">
+                                                   <nf-section>
+                                                   </nf-section>
+                                                </div>
+                                                <div class="nf-field">
+                                                   <div id="nf-field-2-wrap" class="field-wrap email-wrap" data-field-id="2">
+                                                      <div class="nf-field-label">
+                                                         <label for="nf-field-2" id="nf-label-field-2" class="">
+                                                         Email <span class="ninja-forms-req-symbol">*</span> 
+                                                         </label>
                                                       </div>
-                                                   </nf-field>
-                                                   <nf-field>
-                                                      <div id="nf-field-6-container" class="nf-field-container submit-container  label-above  textbox-container">
-                                                         <div class="nf-before-field">
-                                                            <nf-section>
-                                                            </nf-section>
-                                                         </div>
-                                                         <div class="nf-field">
-                                                            <div id="nf-field-6-wrap" class="field-wrap submit-wrap textbox-wrap" data-field-id="6">
-                                                               <div class="nf-field-label"></div>
-                                                               <div class="nf-field-element">
-                                                                  <input id="nf-field-6" class="ninja-forms-field nf-element " type="submit" value="Submit">
-                                                               </div>
-                                                               <div class="nf-error-wrap"></div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="nf-after-field">
-                                                            <nf-section>
-                                                               <div class="nf-input-limit"></div>
-                                                               <div id="nf-error-6" class="nf-error-wrap nf-error" role="alert"></div>
-                                                            </nf-section>
-                                                         </div>
+                                                      <div class="nf-field-element">
+                                                         <input type="email" value="" class="ninja-forms-field nf-element" id="nf-field-2" name="nf-field-2-email" autocomplete="email" aria-invalid="false" aria-describedby="nf-error-2" aria-labelledby="nf-label-field-2" aria-required="true" required="">
                                                       </div>
-                                                   </nf-field>
-                                                </nf-fields-wrap>
+                                                   </div>
+                                                </div>
+                                                <div class="nf-after-field">
+                                                   <nf-section>
+                                                      <div class="nf-input-limit"></div>
+                                                      <div id="nf-error-2" class="nf-error-wrap nf-error" role="alert"></div>
+                                                   </nf-section>
+                                                </div>
                                              </div>
+                                          </nf-field>
+                                          
+                                          <nf-field>
+                                             <div id="nf-field-4-container" class="nf-field-container submit-container  label-above  textbox-container">
+                                                <div class="nf-before-field">
+                                                   <nf-section>
+                                                   </nf-section>
+                                                </div>
+                                                <div class="nf-field">
+                                                   <div id="nf-field-4-wrap" class="field-wrap submit-wrap textbox-wrap" data-field-id="4">
+                                                      <div class="nf-field-label"></div>
+                                                      <div class="nf-field-element">
+                                                         <input id="nf-field-4" class="ninja-forms-field nf-element " type="submit" value="Submit">
+                                                      </div>
+                                                      <div class="nf-error-wrap"></div>
+                                                   </div>
+                                                </div>
+                                                <div class="nf-after-field">
+                                                   <nf-section>
+                                                      <div class="nf-input-limit"></div>
+                                                      <div id="nf-error-4" class="nf-error-wrap nf-error" role="alert"></div>
+                                                   </nf-section>
+                                                </div>
+                                             </div>
+                                          </nf-field>
+                                       </nf-fields-wrap>
+                                    </div>
                                              <div class="nf-after-form-content">
                                                 <nf-section>
                                                    <div id="nf-form-errors-2" class="nf-form-errors" role="alert">
@@ -131,8 +131,6 @@
                                     </div>
                                  </div>
                               </div>
-                              <!-- TODO: Move to Template File. -->
-                              <script>var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='2';form.settings={"objectType":"Form Setting","editActive":true,"title":"Newsletter","show_title":0,"allow_public_link":0,"embed_form":"","clear_complete":1,"hide_complete":1,"default_label_pos":"above","wrapper_class":"","element_class":"","form_title_heading_level":"3","key":"","add_submit":1,"currency":"","unique_field_error":"A form with this value has already been submitted.","logged_in":false,"not_logged_in_msg":"","sub_limit_msg":"The form has reached its submission limit.","calculations":[],"formContentData":["email_address_1685954999394","submit_1685955216427"],"changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","drawerDisabled":false,"ninjaForms":"Ninja Forms","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","formHoneypot":"If you are a human seeing this field, please leave it empty.","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":false,"thousands_sep":",","decimal_point":".","siteLocale":"en_US","dateFormat":"m\/d\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"],"recaptchaConsentMissing":"reCapctha validation couldn&#039;t load.","recaptchaMissingCookie":"reCaptcha v3 validation couldn&#039;t load the cookie needed to submit the form.","recaptchaConsentEvent":"Accept reCaptcha cookies before sending the form.","currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":999,"idAttribute":"id","label":"Email Address","type":"textbox","key":"email_address_1685954999394","label_pos":"above","required":1,"default":"","placeholder":"Enter an valid email address.","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","desc_text":"<p><br><\/p>","mask":"","custom_mask":"","custom_name_attribute":"","personally_identifiable":"","value":"","drawerDisabled":false,"id":5,"beforeField":"","afterField":"","parentType":"textbox","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":9999,"idAttribute":"id","type":"submit","label":"Submit","processing_label":"Processing","container_class":"","element_class":"","key":"submit_1685955216427","id":6,"beforeField":"","afterField":"","value":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"}];nfForms.push(form);</script>
                            </div>
                         </div>
                      </div>
