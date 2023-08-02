@@ -1,36 +1,5 @@
 @extends('frontend.layouts.app')
 @section('content')
-<style>
-.elementor-element.elementor-element-1 > .elementor-element-populated {
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #FFF900;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin: 10px 10px 10px 10px;
-    --e-column-margin-right: 10px;
-    --e-column-margin-left: 10px;
-    padding:24px;
-}
-
-.elementor-element.elementor-element-1 .elementor-heading-title {
-    color: #444444;
-    font-family: "Inter", inter;
-    font-size: 20px;
-    font-weight: 700;
-    text-align:center;
-}
-
-.elementor-element.elementor-element-1 > .elementor-widget-container {
-    margin-top: 16px;
-}
-@media (min-width: 1200px){
-   .page-header .entry-title {
-    max-width: 1140px;
-    margin-left:200px;
-}
-}
-
-    </style>
     <header class="page-header">
 			<h1 class="entry-title">Catalog</h1>
    </header>

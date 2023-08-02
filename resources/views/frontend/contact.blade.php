@@ -1,18 +1,4 @@
 @extends('frontend.layouts.app')
-<style>
-	@media (min-width: 1200px){
-		.form-title {
-			max-width: 1140px;
-		}
-	}
-		
-
-	.form-title{
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-	}
-</style>
 @section('content')
 <section class="elementor-section elementor-top-section elementor-element elementor-element-ddbdb59 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="ddbdb59" data-element_type="section">
    <div class="elementor-container elementor-column-gap-default">

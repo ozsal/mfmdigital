@@ -1,169 +1,10 @@
 @extends('frontend.layouts.app')
 @section('content')
-<style>
-   .elementor-element.elementor-element-1 .elementor-heading-title {
-   color: #FF5A5F;
-   font-family: "Inter", inter;
-   font-size: 18px;
-   font-weight: 500;
-   text-transform: uppercase;
-   letter-spacing: 0.9px;
-   }
-   .elementor-element.elementor-element-2 .wpr-advanced-text-preffix {
-   color: #343F5A;
-   font-family: "Inter", inter;
-   font-size:62px; /* 75 */
-   font-weight: 700;
-   padding-top: 0px;
-   padding-bottom: 0px;
-   }
-   @media (min-width: 768px){
-   .elementor-element.elementor-element-logo {
-   width: 33.16%;
-   }
-   .elementor-column.elementor-col-50 {
-   width: 66.754%;
-   }
-   }
-   .elementor-element.elementor-element-2 .wpr-anim-text {
-   color: #FF5A5F;
-   padding: 0px 0px 0px 0px;
-   font-family: "Inter", inter;
-   font-size: 75px;
-   font-weight: 700;
-   font-style: normal;
-   }
-   .elementor-element.elementor-element-longtext {
-   color: #777777;
-   font-family: "Inter", inter;
-   font-size: 17px;
-   font-weight: 500;
-   }
-   .elementor-element.elementor-element-b2f2cdc > .elementor-widget-container {
-   padding: 30px 30px 30px 30px;
-   background-color: #FFFFFF;
-   border-radius: 15px 15px 15px 15px;
-   box-shadow: 0px 0px 15px 0px rgba(117, 117, 117, 0.11);
-   }
-   .elementor-column.elementor-col-80 img {
-   height: auto;
-   max-width: 400%;
-   border: none;
-   border-radius: 0;
-   box-shadow: none;
-   }
-   .wpr-anim-text-inner .wpr-anim-text-in{
-   font-size:67px!important;
-   }
-   .elementor-element.elementor-element-contact .elementor-button {
-   fill: #FFFFFF;
-   color: #FFFFFF;
-   background-color: #FF5A5F;
-   }
-   .elementor-element.elementor-element-detsec-2 > .elementor-container {
-      max-width: 1490px;
-   }
-   .elementor-element.elementor-element-detsec-3 > .elementor-container {
-      max-width: 1400px;
-   }
-   .elementor-element-detsec {
-      width: 100%;
-   }
-   .elementor-element.elementor-element-det00 > .elementor-widget-container {
-   padding: 30px 30px 30px 30px;
-   background-color: #FFFFFF;
-   border-radius: 15px 15px 15px 15px;
-   box-shadow: 0px 0px 15px 0px rgba(117, 117, 117, 0.11);
-   }
-   .elementor-element.elementor-element-det00 .elementor-image-box-wrapper .elementor-image-box-img {
-   width: 21%;
-   margin-bottom:6px!important;
-   }
-   .elementor-element.elementor-element-det00 .elementor-image-box-wrapper {
-   text-align: left;
-   }
-   @media (min-width: 768px){
-   .elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper {
-   align-items: flex-start;
-   }
-   }
-   .elementor-section.elementor-element-datasec-inner > .elementor-container {
-      max-width: 1400px!important;
-   }
-   .elementor-element.elementor-element-detsec-margin {
-      margin-top: 50px;
-      margin-bottom: 50px;
-   }
-
-   .elementor-element.elementor-element-icons .wpr-promo-box-content .wpr-promo-box-icon {
-    font-size: 27px;
-    margin-bottom: 10px;
-    color: #FF5A5F;
-   }
-   .elementor-element.elementor-element-detsec-title .elementor-heading-title {
-      color: #FF5A5F;
-      font-family: "Inter", inter;
-      font-size: 18px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.9px;
-      padding: 0;
-      margin: 0;
-      line-height: 1;
-      text-align:left;
-   }
-   .elementor-element.elementor-element-detsec-subhead .elementor-heading-title {
-      color: #343F5A;
-      font-family: "Inter", inter;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 1.3em;
-      text-align:left;
-   }
-   .elementor-element.elementor-element-detsec-title-end .elementor-heading-title {
-      color: #FF5A5F;
-      font-family: "Inter", inter;
-      font-size: 18px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.9px;
-      padding: 0;
-      margin: 0;
-      line-height: 1;
-      text-align:left;
-   }
-   .elementor-element.elementor-element-detsec-subhead-end .elementor-heading-title {
-      color: #343F5A;
-      font-family: "Inter", inter;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 1.3em;
-      text-align:left;
-   }
-
-   .elementor-26 .elementor-element.elementor-element-detsec-desc {
-      color: #777777;
-      font-family: "Inter", inter;
-      font-size: 17px;
-      font-weight: 400;
-   }
-   .elementor-element.elementor-element-detsec-desc-end {
-    text-align: center;
-    color: #777777;
-    font-family: "Inter", inter;
-    font-size: 17px;
-    font-weight: 400;
-   }
-
-   .pad-fix{
-      margin-bottom:50px;
-   }
-</style>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-detsec elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="7defd1f90" data-element_type="section">
    <div class="elementor-container elementor-column-gap-default">
-      <div class="elementor-column elementor-col-80 elementor-top-column elementor-element elementor-element-1" data-id="3a896ab7" data-element_type="column">
+      <div class="elementor-column elementor-col-80 elementor-top-column elementor-element elementor-element-about-1" data-id="3a896ab7" data-element_type="column">
          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-1 elementor-invisible elementor-widget elementor-widget-heading" data-id="4d3aa322" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;}" data-widget_type="heading.default">
+            <div class="elementor-element elementor-element-about-1 elementor-invisible elementor-widget elementor-widget-heading" data-id="4d3aa322" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;}" data-widget_type="heading.default">
                <div class="elementor-widget-container">
                   <style>/*! elementor - v3.14.0 - 26-06-2023 */
                      .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}
@@ -171,7 +12,7 @@
                   <h2 class="elementor-heading-title elementor-size-default">Transforming the Digital Landscape in Nepal</h2>
                </div>
             </div>
-            <div class="elementor-element elementor-element-2 wpr-advanced-text-style-animated wpr-fancy-text-typing wpr-animated-text-infinite-yes elementor-invisible elementor-widget elementor-widget-wpr-advanced-text" data-id="17be1fd1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;,&quot;_animation_delay&quot;:100,&quot;anim_loop&quot;:&quot;yes&quot;}" data-widget_type="wpr-advanced-text.default">
+            <div class="elementor-element elementor-element-about-2 wpr-advanced-text-style-animated wpr-fancy-text-typing wpr-animated-text-infinite-yes elementor-invisible elementor-widget elementor-widget-wpr-advanced-text" data-id="17be1fd1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;,&quot;_animation_delay&quot;:100,&quot;anim_loop&quot;:&quot;yes&quot;}" data-widget_type="wpr-advanced-text.default">
                <div class="elementor-widget-container">
                   <h3 class="wpr-advanced-text">
                      <span class="wpr-advanced-text-preffix">Turning Ideas Into<br></span>

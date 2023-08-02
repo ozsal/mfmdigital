@@ -1,0 +1,240 @@
+/* blueprint custom css */
+.elementor-element.elementor-element-blueprint-button .elementor-button {
+    font-family: "Inter", inter;
+    font-weight: 700;
+    fill: #AD2323;
+    color: #AD2323;
+    background-color: #FFF578;
+    box-shadow: 1px 1px 17px 8px rgba(254.89094982696463, 255, 4.04674928084664, 0.98);
+   }
+
+   .elementor-element.elementor-element-blueprint-button-buy > .elementor-widget-container {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    --e-transform-translateX: -186px;
+    --e-transform-translateY: -150px;
+   }
+   .elementor-element.elementor-element-blueprint-button-down > .elementor-widget-container {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    --e-transform-translateX: 90px;
+    --e-transform-translateY: -150px;
+   }
+
+   /* blueprint custom css ends here */
+
+
+
+   /* about custom css */
+
+   .elementor-element.elementor-element-about-1 .elementor-heading-title {
+    color: #FF5A5F;
+    font-family: "Inter", inter;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    }
+    .elementor-element.elementor-element-about-2 .wpr-advanced-text-preffix {
+    color: #343F5A;
+    font-family: "Inter", inter;
+    font-size:62px; /* 75 */
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+    @media (min-width: 768px){
+    .elementor-element.elementor-element-logo {
+    width: 33.16%;
+    }
+    .elementor-column.elementor-col-50 {
+    width: 66.754%;
+    }
+    }
+    .elementor-element.elementor-element-about-2 .wpr-anim-text {
+    color: #FF5A5F;
+    padding: 0px 0px 0px 0px;
+    font-family: "Inter", inter;
+    font-size: 75px;
+    font-weight: 700;
+    font-style: normal;
+    }
+    .elementor-element.elementor-element-longtext {
+    color: #777777;
+    font-family: "Inter", inter;
+    font-size: 17px;
+    font-weight: 500;
+    }
+    .elementor-element.elementor-element-b2f2cdc > .elementor-widget-container {
+    padding: 30px 30px 30px 30px;
+    background-color: #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 15px 0px rgba(117, 117, 117, 0.11);
+    }
+    .elementor-column.elementor-col-80 img {
+    height: auto;
+    max-width: 400%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    }
+    .wpr-anim-text-inner .wpr-anim-text-in{
+    font-size:67px!important;
+    }
+    .elementor-element.elementor-element-contact .elementor-button {
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FF5A5F;
+    }
+    .elementor-element.elementor-element-detsec-2 > .elementor-container {
+       max-width: 1490px;
+    }
+    .elementor-element.elementor-element-detsec-3 > .elementor-container {
+       max-width: 1400px;
+    }
+    .elementor-element-detsec {
+       width: 100%;
+    }
+    .elementor-element.elementor-element-det00 > .elementor-widget-container {
+    padding: 30px 30px 30px 30px;
+    background-color: #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 15px 0px rgba(117, 117, 117, 0.11);
+    }
+    .elementor-element.elementor-element-det00 .elementor-image-box-wrapper .elementor-image-box-img {
+    width: 21%;
+    margin-bottom:6px!important;
+    }
+    .elementor-element.elementor-element-det00 .elementor-image-box-wrapper {
+    text-align: left;
+    }
+    @media (min-width: 768px){
+    .elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper {
+    align-items: flex-start;
+    }
+    }
+    .elementor-section.elementor-element-datasec-inner > .elementor-container {
+       max-width: 1400px!important;
+    }
+    .elementor-element.elementor-element-detsec-margin {
+       margin-top: 50px;
+       margin-bottom: 50px;
+    }
+ 
+    .elementor-element.elementor-element-icons .wpr-promo-box-content .wpr-promo-box-icon {
+     font-size: 27px;
+     margin-bottom: 10px;
+     color: #FF5A5F;
+    }
+    .elementor-element.elementor-element-detsec-title .elementor-heading-title {
+       color: #FF5A5F;
+       font-family: "Inter", inter;
+       font-size: 18px;
+       font-weight: 500;
+       text-transform: uppercase;
+       letter-spacing: 0.9px;
+       padding: 0;
+       margin: 0;
+       line-height: 1;
+       text-align:left;
+    }
+    .elementor-element.elementor-element-detsec-subhead .elementor-heading-title {
+       color: #343F5A;
+       font-family: "Inter", inter;
+       font-size: 40px;
+       font-weight: 500;
+       line-height: 1.3em;
+       text-align:left;
+    }
+    .elementor-element.elementor-element-detsec-title-end .elementor-heading-title {
+       color: #FF5A5F;
+       font-family: "Inter", inter;
+       font-size: 18px;
+       font-weight: 500;
+       text-transform: uppercase;
+       letter-spacing: 0.9px;
+       padding: 0;
+       margin: 0;
+       line-height: 1;
+       text-align:left;
+    }
+    .elementor-element.elementor-element-detsec-subhead-end .elementor-heading-title {
+       color: #343F5A;
+       font-family: "Inter", inter;
+       font-size: 40px;
+       font-weight: 500;
+       line-height: 1.3em;
+       text-align:left;
+    }
+ 
+    .elementor-26 .elementor-element.elementor-element-detsec-desc {
+       color: #777777;
+       font-family: "Inter", inter;
+       font-size: 17px;
+       font-weight: 400;
+    }
+    .elementor-element.elementor-element-detsec-desc-end {
+     text-align: center;
+     color: #777777;
+     font-family: "Inter", inter;
+     font-size: 17px;
+     font-weight: 400;
+    }
+ 
+    .pad-fix{
+       margin-bottom:50px;
+    }
+
+   /* about custom css ends here*/
+
+
+   /* catalog custom css */
+   .elementor-element.elementor-element-1 > .elementor-element-populated {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFF900;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 10px 10px 10px 10px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding:24px;
+}
+
+.elementor-element.elementor-element-1 .elementor-heading-title {
+    color: #444444;
+    font-family: "Inter", inter;
+    font-size: 20px;
+    font-weight: 700;
+    text-align:center;
+}
+
+.elementor-element.elementor-element-1 > .elementor-widget-container {
+    margin-top: 16px;
+}
+
+   @media (min-width: 1200px){
+      .page-header .entry-title {
+         max-width: 1140px;
+         margin-left:200px;
+      }
+   }
+
+    /* catalog custom css ends here*/
+
+    
+   /* contact custom css */
+   @media (min-width: 1200px){
+    .form-title {
+        max-width: 1140px;
+    }
+}
+    
+
+.form-title{
+margin-right: auto;
+margin-left: auto;
+width: 100%;
+}
+
+    /* contact custom css ends here*/
+

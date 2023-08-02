@@ -1,27 +1,4 @@
 @extends('frontend.layouts.app')
-<style>
-   .elementor-element.elementor-element-blueprint-button .elementor-button {
-    font-family: "Inter", inter;
-    font-weight: 700;
-    fill: #AD2323;
-    color: #AD2323;
-    background-color: #FFF578;
-    box-shadow: 1px 1px 17px 8px rgba(254.89094982696463, 255, 4.04674928084664, 0.98);
-   }
-
-   .elementor-element.elementor-element-blueprint-button-buy > .elementor-widget-container {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    --e-transform-translateX: -186px;
-    --e-transform-translateY: -150px;
-   }
-   .elementor-element.elementor-element-blueprint-button-down > .elementor-widget-container {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    --e-transform-translateX: 90px;
-    --e-transform-translateY: -150px;
-   }
-   </style>
 @section('content')
 <section class="elementor-section elementor-top-section elementor-element elementor-element-41f9ba3 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="41f9ba3" data-element_type="section">
             <div class="elementor-container elementor-column-gap-no">

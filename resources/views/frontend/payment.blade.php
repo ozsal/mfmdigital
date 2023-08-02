@@ -1,10 +1,10 @@
 @extends('frontend.layouts.app')
 <style>
     .form-fields-message {
-    color: #FF5A5F;
-    font-family: "Inter", inter;
-    font-weight: 700;
-}
+        color: #FF5A5F;
+        font-family: "Inter", inter;
+        font-weight: 700;
+    }
     </style>
 @section('content')
 <div class="page-content">
